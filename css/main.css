@@ -303,3 +303,11 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+nav ul li a{
+    color: black;
+}
+
+.info-card{
+
+}
