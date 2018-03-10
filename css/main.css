@@ -304,10 +304,23 @@ textarea {
     }
 }
 
-nav ul li a{
-    color: black;
+nav ul li a:hover{
+    border-bottom: 2px solid #ffc107;
 }
 
-.info-card{
+.brand-logo{
+    width: 320px;
+    background: white;
+}
 
+.info-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5%;
+}
+
+@media screen and (max-width: 900px) {
+    .info-cards{
+        grid-template-columns: 1fr;
+    }
 }
