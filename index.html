@@ -1,311 +1,364 @@
 <!doctype html>
 <html class="no-js" lang="en-US">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="manifest" href="site.webmanifest">
-        <link rel="apple-touch-icon" href="icon.png">
-        <!-- Place favicon.ico in the root directory -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/materialize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    </head>
-    <body>
-        <!--[if lte IE 9]>
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <div class="row" style="margin-bottom: 0">
-            <div class="container">
-                <a href="#" class="brand-logo"><img src="img/svglogo2.svg" alt="Law Offices of Kevin Kovacs, Esq." class="responsive-img" id="k-logo"></a>
-                <ul class="right">
-                    <li>
-                        <a href="#" class="btn amber white-text right hide-on-small-and-down"><i class="material-icons left">local_phone</i>Call Us</a>
-                    </li>
-                </ul>
-
+    <!-- Add your site or application content here -->
+    <section class="top-head">
+        <div class="top-logo-row">
+            <div class="logo-container">
+                <a href="#" class="brand-logo">
+                    <img src="img/svglogo2.svg" alt="Law Offices of Kevin Kovacs, Esq." class="responsive-img" id="k-logo">
+                </a>
+            </div>
+            <div class="call-us-area">
+                <div class="call-us-button">
+                    <a href="#" class="btn amber white-text right hide-on-small-and-down">
+                        <i class="material-icons left">local_phone</i>Call Us</a>
+                    <a href="#" class="amber-text right hide-on-med-and-up">
+                        <i class="material-icons left">local_phone</i>
+                    </a>
+                </div>
+                <div class="email-area">
+                    <a href="mailto:Kovacslawoffice@gmail.com" class="right hide-on-small-and-down">
+                        <i class="material-icons left">email</i>Kovacslawoffice@gmail.com</a>
+                    <a href="mailto:Kovacslawoffice@gmail.com" class="right hide-on-med-and-up">
+                        <i class="material-icons left">email</i>
+                    </a>
+                </div>
             </div>
         </div>
         <nav>
             <div class="nav-wrapper blue darken-4">
                 <div class="container">
-                    <!--<a href="#" class="brand-logo"><img src="img/svglogo2.svg" alt="Law Offices of Kevin Kovacs, Esq." class="responsive-img" id="k-logo"></a>-->
-                        <a href="#" data-activates="mobile-menu" class="button-collapse amber-text"><i class="material-icons">menu</i></a>
-                    <ul class="right amber-text hide-on-med-and-down">
-                        <li><a href="#">Practice Areas</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                    <a href="#" data-activates="mobile-menu" class="button-collapse amber-text">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="navigation-menu amber-text hide-on-med-and-down">
+                        <li>
+                            <a href="#">Practice Areas</a>
+                        </li>
+                        <li>
+                            <a href="#">About the Firm</a>
+                        </li>
+                        <li>
+                            <a href="#">Attorney Profile</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact Us</a>
+                        </li>
                     </ul>
                     <ul class="side-nav" id="mobile-menu">
-                        <li><a href="#">Practice Areas</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li>
+                            <a href="#">Practice Areas</a>
+                        </li>
+                        <li>
+                            <a href="#">About the Firm</a>
+                        </li>
+                        <li>
+                            <a href="#">Attorney Profile</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact Us</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <br>
-
-        <div class="row">
-            <div class="card-panel" id="hero-image">
-                <div class="container">
-                    <div class="card-content">
-                        <h1 class="white-text">Kevin Kovacs, Esq.</h1>
-                        <p class="white-text">Get top notch representation today with a Central New Jersey Lawer that stands out.</p>
+        <!-- TODO fix this border on hover-->
+        <div class="row no-pad" style="margin-bottom: 0;" id="hero-row">
+            <div class="" id="hero-image">
+                <div class="overlay">
+                    <div class="container overlay-container">
+                        <h2 class="white-text center hide-on-med-and-down">The Law Offices of Kevin Kovacs, Esq.</h2>
                         <br>
-                        <!--<h3 class="white-text hide-on-small-and-down">The Law Offices of</h3>-->
-                        <!--<h1 class="white-text hide-on-small-and-down">Kevin Kovacs, Esq.</h1>-->
-                        <!--<h3 class="white-text hide-on-med-and-up">The Law Offices of Kevin Kovacs, Esq.</h3>-->
-                        <!--<h5 class="white-text hide-on-med-and-up">Success in the Courtroom, Success in the Community</h5>-->
-                        <!--<h4 class="white-text hide-on-small-and-down">Success in the Courtroom, Success in the Community</h4>-->
-                        <a href="#" class="btn-large waves-effect waves-light amber white-text">Get in Touch</a>
+                        <h5 class="white-text center hide-on-med-and-down sub-title">EXPERIENCED COUNSEL</h5>
+                        <h5 class="white-text center hide-on-med-and-down sub-title-bold">PERSONAL REPRESENTATION</h5>
+                        <h3 class="white-text center hide-on-large-only">The Law Offices of Kevin Kovacs, Esq.</h3>
+                        <h5 class="white-text center hide-on-large-only sub-title-bold">EXPERIENCED COUNSEL</h5>
+                        <h5 class="white-text center hide-on-large-only sub-title-bold">PERSONAL REPRESENTATION</h5>
                     </div>
                 </div>
             </div>
         </div>
-        <!--<section class="section section-practice-areas">-->
-            <!--<div class="container">-->
-                <!--<ul class="collection">-->
-                    <!--<li class="collection-item avatar">-->
-                        <!--<i class="material-icons medium">local_hospital</i>-->
-                        <!--<span class="title">Personal Injury</span>-->
-                        <!--<p>First Line <br>-->
-                            <!--Second Line-->
-                        <!--</p>-->
-                    <!--</li>-->
-                    <!--<li class="collection-item avatar">-->
-                        <!--<i class="material-icons medium">gavel</i>-->
-                        <!--<span class="title">Worker's Compensation</span>-->
-                        <!--<p>First Line <br>-->
-                            <!--Second Line-->
-                        <!--</p>-->
-                    <!--</li>-->
-                    <!--<li class="collection-item avatar">-->
-                        <!--<i class="material-icons medium">store</i>-->
-                        <!--<span class="title">Small Business Litigation</span>-->
-                        <!--<p>First Line <br>-->
-                            <!--Second Line-->
-                        <!--</p>-->
-                    <!--</li>-->
-                <!--</ul>-->
-            <!--</div>-->
-        <!--</section>-->
-        <section class="section">
+    </section>
+    <section class="mid-icons blue darken-3 white-text no-pad">
+        <div class="row no-pad" style="margin: 0;">
+            <h4 class="center-align">How can we help you?</h4>
+            <h6 class="center-align sub-title">Check out a practice area for more information.</h6>
+            <br>
+        </div>
+        <div class="row">
+            <div class="container pa-row">
+                <div class="icon-wrapper ">
+                    <div class="icon1 pai amber circle hoverable">
+                        <img src="./img/icons/bandage.svg" alt="bandage icon" class="">
+                    </div>
+                    <div class="bottom center">
+                        <h5>
+                            Personal Injury
+                        </h5>
+                    </div>
+                </div>
+                <div class="icon-wrapper ">
+                    <div class="icon2 pai purple circle hoverable">
+                        <img src="./img/icons/money-bag.svg" alt="money bag icon">
+                    </div>
+                    <div class="bottom center flow-text">
+                        <h5>
+                            Worker's Compensation
+                        </h5>
+                    </div>
+                </div>
+                <div class="icon-wrapper">
+                    <div class="icon3 pai teal circle hoverable">
+                        <img src="./img/icons/bag.svg" alt="bag icons">
+                    </div>
+                    <div class="bottom center flow-text">
+                        <h5>
+                            Small Business Litigation
+                        </h5>
+                    </div>
+                </div>
+                <div class="icon-wrapper">
+                    <div class="icon4 pai blue circle hoverable">
+                        <img src="./img/icons/scale.svg" alt="scale icon">
+                    </div>
+                    <div class="bottom center flow-text">
+                        <h5>
+                            Employment
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="image-area middle-grid">
+        <div class="bio-container">
+            <div class="bio-card z-depth-3">
+                <div class="left-side">
+                    <div class="img-area">
+                        <img src="./img/headshot.png" alt="Picture of Kevin Kovcs, Esq." class="circle hidden_mobile">
+                        <img src="./img/square_head.jpg" alt="Picture of Kevin Kovcs, Esq." class="hidden_desktop">
+                    </div>
+                    <div class="title-area">
+                        <div style="font-weight: bold; font-size: 1.3em;">Kevin Kovacs</div>
+                        <div>Central New Jersey</div>
+                        <div>Civil Trial Attorney</div>
+                    </div>
+                </div>
+                <div class="content-area">
+                    <p>If you need experienced counsel with a reputation for hard work, skill and high ethical standards, who
+                        will treat you and your case with a close personal approach, consider contacting Kevin today.</p>
+                    <div class="action-area">
+                        <div class="btn white-text amber">Learn More</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fact-card z-depth-3">
+            <div class="title-top">
+                <div>The best representation for the toughest cases.</div>
+            </div>
+            <div class="content">
+                <div class="list-item">
+                    <div class="check">
+                        <i class="far fa-check fa-2x"></i>
+                    </div>
+                    <p id="list-p">Certified by the New Jersey Supreme Court as a Civil Trial Attorney for over 25 years</p>
+                </div>
+                <div class="list-item">
+                    <div class="check">
+                        <i class="far fa-check fa-2x"></i>
+                    </div>
+                    <p id="list-p">Selected as a “Super Lawyer” as reported in New Jersey Magazine from 2006 to 2018 for Personal Injury
+                        and Employment practices</p>
+                </div>
+                <div class="list-item">
+                    <div class="check">
+                        <i class="far fa-check fa-2x"></i>
+                    </div>
+                    <p id="list-p">Highest award for Ethics and Legal Skills for 20 years from Martindale Hubbell </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testi-area">
+        <div class="slide-title">
+            <h4 style="margin-left: 5%;">Reputation matters.</h4>
+        </div>
+        <div class="slider-wrapper">
+            <div class="c-card">
+                <div class="c-item" href="#one!">
+                    <h4>New Jersey Law Journal</h4>
+                    <p class="">Check out the latest article on the New Jersey Law Journal featuring a case Kevin helped his client win.
+                    </p>
+                    <a href="#" style="color: #00b0ff">Learn more...</a>
+                </div>
+                <div class="c-item" href="#two!">
+                    <h4>Second Panel</h4>
+                    <p class="">This is your second panel</p>
+                </div>
+                <div class="c-item" href="#three!">
+                    <h4>Third Panel</h4>
+                    <p class="">This is your third panel</p>
+                </div>
+                <div class="c-item" href="#four!">
+                    <h4>Fourth Panel</h4>
+                    <p class="">This is your fourth panel</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="testimonial-image">
+            <img src="img/somerset_courthouse.JPG" alt="Somerville Courthouse" class="responsive-img">
+        </div>
+    </section>
+    <section class="section section-form">
+        <div class="container">
             <div class="row">
-                <div class="container">
-                    <h4 class="center-align with-subtitle">Practice Areas</h4>
-                    <hr>
+                <h4>Contact us!</h4>
+                <p>Use our contact form below, give us a call, or stop by.</p>
+            </div>
+            <div class="contact-row">
+                <div class="form-container card-panel">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="first_name" type="text" class="validate">
+                                <label for="first_name">First Name</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="last_name" type="text" class="validate">
+                                <label for="last_name">Last Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="phone" type="tel" class="validate" size="13">
+                                <label for="phone">Phone Number</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="email" type="email" class="validate">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                <label for="textarea1">Message</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <input type="submit" class="btn">
+                        </div>
+                    </form>
+                </div>
+                <div class="card-panel contact-info">
+                    <div class="logo-area center">
+                        <img src="img/Kovacs-Logo-Partial.svg" alt="Kovacs Logo">
+                    </div>
+                    <div class="info-area">
+                        <h5>Law Offices of Kevin Kovacs, Esq.</h5>
+                        <p>29 Ross Street</p>
+                        <p>Somerville NJ, 08876</p>
+                        <p>908-526-7111</p>
+                        <p>
+                            <a href="mailto:Kovacslawoffice@gmail.com">Kovacslawoffice@gmail.com</a>
+                        </p>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <footer class="page-footer blue darken-3">
+        <div class="container">
             <div class="row">
-                <div class="container info-cards">
-                    <div class="info-box card-panel hoverable amber white-text z-depth-3">
-                        <div class="center">
-                            <i class="material-icons medium">gavel</i>
-                            <h5>Worker's Compensation</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consequatur cum debitis dolores expedita maiores modi necessitatibus, quis ratione vero.</p>
-                        </div>
-                    </div>
-                    <div class="info-box card-panel hoverable purple white-text z-depth-3">
-                        <div class="center">
-                            <i class="material-icons medium">store</i>
-                            <h5>Small Business Litigation</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid esse fugiat quia vel voluptas. Et facere mollitia nam quis repellendus.</p>
-                        </div>
-                    </div>
-                    <div class="info-box card-panel hoverable teal white-text z-depth-3">
-                        <div class="center">
-                            <i class="material-icons medium">local_hospital</i>
-                            <h5>Personal Injury</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A blanditiis dignissimos exercitationem in magnam necessitatibus nesciunt non pariatur placeat possimus.</p>
-                        </div>
-                    </div>
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li>
+                            <a class="grey-text text-lighten-3" href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a class="grey-text text-lighten-3" href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a class="grey-text text-lighten-3" href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a class="grey-text text-lighten-3" href="#!">Link 4</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </section>
-        <section class="section section-bio-cards grey lighten-3">
+        </div>
+        <div class="footer-copyright">
             <div class="container">
-                <div class="row">
-                    <h4 class="center-align with-subtitle">Central New Jersey Civil Trial Attorney</h4>
-                    <h5 class="center-align subtitle">Experienced, Versatile And Accomplished Litigation Counsel</h5>
-                </div>
-                <hr>
-                <section class="section">
-                    <!--<div class="row">-->
-                        <!--<div class="col s12 offset-m2 m8 l6">-->
-                            <!--<div class="card horizontal">-->
-                                <!--<div class="card-image">-->
-                                    <!--<img src="./img/headshot.png" class="responsive-img">-->
-                                <!--</div>-->
-                                <!--<div class="card-stacked">-->
-                                    <!--<div class="card-content">-->
-                                        <!--<p>As one of the 2% of lawyers in NJ certified by the Supreme Court, Mr. Kovacs has earned the title of “Super Lawyer” for many years. </p>-->
-                                    <!--</div>-->
-                                    <!--<div class="card-action">-->
-                                        <!--<a href="#">This is a link</a>-->
-                                    <!--</div>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="col s12 offset-m2 m8 l6">-->
-                            <!--<div class="card horizontal">-->
-                                <!--<div class="card-image">-->
-                                    <!--<img src="./img/staff.png" class="responsive-img">-->
-                                <!--</div>-->
-                                <!--<div class="card-stacked">-->
-                                    <!--<div class="card-content">-->
-                                        <!--<p>Our friendly staff are professional and courteous, providing clients with exceptional service and accommodation. </p>-->
-                                    <!--</div>-->
-                                    <!--<div class="card-action">-->
-                                        <!--<a href="#">This is a link</a>-->
-                                    <!--</div>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <div class="row">
-                        <div class="col s8 m4 l4">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="./img/headshot.png" alt="Kevin Kovacs" class="">
-                                    <span class="card-title">Expert Lawyer</span>
-                                </div>
-                                <div class="card-content">
-                                    <p class="light">Mr. Kovacs is a world class personal injury and small business lawyer serving the central NJ area, bringing world class experience to his clients to win cases and provide exceptional representation.</p>
-                                </div>
-                                <div class="card-action">
-                                    <a href="#">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s8 m4 l4">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="./img/staff.png" alt="Staff Picture"> <!-- TODO change format of pic to be a circle -->
-                                    <span class="card-title">Friendly Staff</span>
-                                </div>
-                                <div class="card-content">
-                                    <p class="light">Our friendly staff are professional and courteous, providing clients with exceptional service and accommodation. </p>
-                                </div>
-                                <div class="card-action">
-                                    <a href="#">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s8 m4 l4">
-                            <br class="hide-on-small-and-down">
-                            <br class="hide-on-small-and-down">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="./img/office.png" alt="Office Picture">
-                                    <span class="card-title">Local Office</span>
-                                </div>
-                                <div class="card-content">
-                                    <p class="light">Located in Somerville NJ, our office is easy to access and find.</p>
-                                </div>
-                                <div class="card-action">
-                                    <a href="#">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                © 2018 Copyright Law Office of Kevin Kovacs, Esq.
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
             </div>
-        </section>
-        <section class="section section-form">
-            <div class="container">
-                <div class="row">
-                    <div class="card-panel col s12 m6">
+        </div>
+    </footer>
+    <!--<script src="js/vendor/modernizr-3.5.0.min.js"></script>-->
 
-                            <form class="col s12">
-                                <div class="row">
-                                    <div class="input-field col s6">
-                                        <input id="first_name" type="text" class="validate">
-                                        <label for="first_name">First Name</label>
-                                    </div>
-                                    <div class="input-field col s6">
-                                        <input id="last_name" type="text" class="validate">
-                                        <label for="last_name">Last Name</label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="input-field col s12">
-                                        <input id="phone" type="tel" class="validate" size="13">
-                                        <label for="phone">Phone Number</label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="input-field col s12">
-                                        <input id="email" type="email" class="validate">
-                                        <label for="email">Email</label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="input-field col s12">
-                                        <textarea id="textarea1" class="materialize-textarea"></textarea>
-                                        <label for="textarea1">Message</label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <input type="submit" class="btn">
-                                </div>
-                            </form>
+    <script src="js/vendor/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/vendor/fontawesome-all.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(function () {
+            $('.button-collapse').sideNav();
+            $('.tap-target').tapTarget('open');
+            $('.tap-target').tapTarget('close');
 
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer class="page-footer blue darken-3">
-            <div class="container">
-                <div class="row">
-                    <div class="col l6 s12">
-                        <h5 class="white-text">Footer Content</h5>
-                        <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-                    </div>
-                    <div class="col l4 offset-l2 s12">
-                        <h5 class="white-text">Links</h5>
-                        <ul>
-                            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-copyright">
-                <div class="container">
-                    © 2018 Copyright Law Office of Kevin Kovacs, Esq.
-                    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-                </div>
-            </div>
-        </footer>
-        <!--<script src="js/vendor/modernizr-3.5.0.min.js"></script>-->
+            $('.c-card').slick({
+                autoplay: true,
+                mobileFirst: true,
+                autoplaySpeed: 2000,
+                slidesToShow: 1,
+                dots: true
+            });
+        });
 
-        <script src="js/vendor/jquery-3.2.1.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/materialize.js"></script>
-        <script src="js/vendor/fontawesome-all.min.js"></script>
-        <script src="js/main.js"></script>
-        <script>
-            $(function(){
-                $('.button-collapse').sideNav();
-                $('.tap-target').tapTarget('open');
-                $('.tap-target').tapTarget('close');
-            })
-        </script>
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-        <!--<script>-->
-            <!--window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;-->
-            <!--ga('create','UA-XXXXX-Y','auto');ga('send','pageview')-->
-        <!--</script>-->
-        <!--<script src="https://www.google-analytics.com/analytics.js" async defer></script>-->
-    </body>
+    </script>
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <!--<script>-->
+    <!--window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;-->
+    <!--ga('create','UA-XXXXX-Y','auto');ga('send','pageview')-->
+    <!--</script>-->
+    <!--<script src="https://www.google-analytics.com/analytics.js" async defer></script>-->
+</body>
+
 </html>
