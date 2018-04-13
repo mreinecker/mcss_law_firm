@@ -105,8 +105,6 @@ textarea {
     font-family: "CardoB", sans-serif;
 }
 
-.brand-logo {}
-
 #k-logo {
     max-width: 500px;
     width: 100%;
@@ -173,22 +171,26 @@ nav ul li:hover {
 
 .pa-row {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
 }
 
 .icon-wrapper {
     display: flex;
     flex-flow: column;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .pai {
     min-height: 200px;
+    max-height: 200px;
     min-width: 200px;
     max-width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
 }
 
 .pai img {
@@ -201,9 +203,9 @@ nav ul li:hover {
     }
     .pai {
         min-height: 125px;
-        max-height: 150px;
+        max-height: 125px;
         min-width: 125px;
-        max-width: 150px;
+        max-width: 125px;
     }
     .icon-wrapper h5 {
         font-size: 1rem;
@@ -229,7 +231,7 @@ nav ul li:hover {
 
 body {
     display: grid;
-    grid-template-areas: "header" "icons" "bio-area" "testimonial" "footer";
+    grid-template-areas: "header" "icons" "bio-area" "testimonial" "bottom-cards" "footer";
     grid-template-columns: 1fr;
 }
 
@@ -574,10 +576,12 @@ body {
 
 .contact-row {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    justify-content: space-evenly;
-    grid-gap: 10px;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 5%;
+}
+
+.form-container {
+    width: 100%;
 }
 
 @media only screen and (max-width: 800px) {
@@ -605,39 +609,179 @@ body {
     margin-left: 1%;
 }
 
-/* @media screen and (max-width: 1350px) {
-    #background-pa {
-        background-position: left top 80%;
-    }
-}
-
-@media screen and (max-width: 1300px) {
-    #background-pa {
-        background-position: left top 100%;
-    }
-}
-
-@media screen and (max-width: 1250px) {
-    #background-pa {
-        background-position: left top 300%;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    #background-pa {
-        background-position: top left;
-    }
-} */
-
-/* 
-@media screen and (max-width: 1100px) {
-    #background-pa {
-        background-position: left 40% top 350%;
-    }
-} */
-
 #tabs-container {
     background: rgb(248, 248, 248);
+}
+
+/************ practice area page end ********/
+
+/********** contact page **********/
+
+#background-contact {
+    margin-top: 5px;
+    background-image: url("../img/scale.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top left;
+}
+
+.contactus-row {
+    display: flex;
+    width: 60%;
+}
+
+.form-container {
+    padding: 1rem 3rem;
+}
+
+@media only screen and (max-width:660px) {
+    .contactus-row,
+    .form-container {
+        width: 100%;
+    }
+}
+
+/************** forms above footer ***************/
+
+.section-form {
+    grid-area: bottom-cards;
+}
+
+.bottom-cards-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 5%;
+}
+
+.map-card {
+    flex-grow: 1;
+}
+
+@media only screen and (max-width: 800px) {
+    #desktop-card {
+        display: none;
+    }
+    .bottom-cards-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .map-card {
+        width: 100%;
+        height: 25rem;
+    }
+}
+
+/************* footer ***************/
+
+.page-footer {
+    grid-area: footer;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.footer-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "left right";
+}
+
+.left-box {
+    grid-area: left;
+}
+
+.right-box {
+    grid-area: right;
+}
+
+#contact-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#footer-logo {
+    height: 5rem;
+}
+
+#footer-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+.silly {
+    align-self: flex-start;
+    display: flex;
+    justify-content: center;
+}
+
+/**** About Page *******/
+
+.about-row {
+    display: flex;
+    min-width: 100%;
+}
+
+.about-title {
+    border-bottom: solid 5px #ffc107;
+    margin-bottom: 1rem;
+}
+
+#background-about {
+    margin-top: 5px;
+    background-image: url("../img/pillars.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top left;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+}
+
+.picture-row {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.picture-row p {
+    margin-left: 5%;
+}
+
+@media only screen and (max-width: 960px) {
+    .picture-row {
+        grid-template-columns: 1fr;
+    }
+    .picture-row p {
+        margin-left: 0;
+        margin-top: 5%;
+    }
+}
+
+/************** attorney profile ******************/
+
+#profile-title {
+    font-size: 1.64rem;
+    line-height: 110%;
+    margin: 0.82rem 0 0.656rem 2rem;
+}
+
+#ap-pic {
+    margin-top: 1rem;
+    width: 10rem;
 }
 
 /* ==========================================================================
