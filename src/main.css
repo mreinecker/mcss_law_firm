@@ -1,0 +1,969 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.sub-title {
+    font-family: "CardoReg", sans-serif;
+}
+
+.sub-title-bold {
+    font-family: "CardoB", sans-serif;
+}
+
+#k-logo {
+    max-width: 500px;
+    width: 100%;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 690px) {
+    .hide-small-top {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 691px) {
+    .hide-med-up-top {
+        display: none !important;
+    }
+}
+
+.overlay {
+    background: rgba(13, 71, 161, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+@media screen and (min-width: 900px) {
+    .overlay-container {
+        width: 50%;
+    }
+}
+
+#hero-image {
+    background: url("../img/hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    height: 40vh;
+    min-height: 300px;
+    position: relative;
+}
+
+#hero-image {
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 500px) {
+    #hero-row {
+        min-height: fit-content;
+    }
+    .overlay-container h3 {
+        font-size: 2.28rem;
+        line-height: 110%;
+        margin: 1.14rem 0 0.912rem 0;
+    }
+    .overlay-container h5 {
+        font-size: 1rem;
+        line-height: 110%;
+        margin: 0.5rem 0 0.4rem 0;
+    }
+}
+
+nav ul li:hover {
+    border-bottom: 4px solid #ffc107;
+}
+
+.brand-logo {
+    width: 320px;
+    background: white;
+}
+
+.pa-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.icon-wrapper {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.pai {
+    min-height: 200px;
+    max-height: 200px;
+    min-width: 200px;
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.pai img {
+    height: 60px;
+}
+
+@media screen and (max-width: 1200px) {
+    .pai img {
+        height: 50px;
+    }
+    .pai {
+        min-height: 125px;
+        max-height: 125px;
+        min-width: 125px;
+        max-width: 125px;
+    }
+    .icon-wrapper h5 {
+        font-size: 1rem;
+        line-height: 110%;
+        margin: 0.5rem 0 0.4rem 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .pa-row {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.navigation-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.navigation-menu li {
+    width: fit-content;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "header" "icons" "bio-area" "testimonial" "bottom-cards" "footer";
+    grid-template-columns: 1fr;
+}
+
+.top-head {
+    grid-area: header;
+}
+
+.mid-icons {
+    grid-area: icons;
+}
+
+.middle {
+    grid-area: bio-area;
+}
+
+/******** top header ***********/
+
+.top-logo-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.call-us-area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 5px;
+}
+
+.call-us-button {
+    margin: 5px;
+}
+
+.email-area {
+    margin: 5px;
+}
+
+/*------------------------------------------*/
+
+/********* middle section *************/
+
+.image-area {
+    background-image: url("../img/scalehammer.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-position: top;
+}
+
+@media screen and (max-width: 660px) {
+    .image-area {
+        background-size: contian;
+    }
+}
+
+.middle-grid {
+    height: 800px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "bio" "card";
+    margin-bottom: 5rem;
+}
+
+/********* bio card **********/
+
+.bio-container {
+    grid-area: bio;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.bio-card {
+    display: grid;
+    grid-template-areas: "pic content" "pic content";
+    background: rgb(241, 241, 241);
+    width: 525px;
+    margin-top: 10%;
+    margin-right: 10%;
+}
+
+.hidden_desktop {
+    display: none;
+}
+
+.left-side {
+    grid-area: pic;
+}
+
+.img-area {
+    margin-top: -50%;
+    margin-left: 10%;
+}
+
+.img-area img {
+    margin: 0 auto;
+}
+
+.img-area img {
+    width: 80%;
+}
+
+.title-area {
+    grid-area: title;
+    padding-left: 30px;
+    padding-right: 0;
+    padding-bottom: 30px;
+    padding-top: 15px;
+}
+
+.content-area {
+    grid-area: content;
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.action-area {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.action-area .btn {
+    width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .bio-card {
+        margin-top: 15%;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .bio-card {
+        margin-top: 20%;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .bio-container {
+        justify-content: center;
+        margin-bottom: 0;
+    }
+    .bio-card {
+        margin: 0;
+    }
+    .content-area {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 30px;
+        padding-left: 0;
+    }
+    .img-area {
+        margin: 5%;
+    }
+    .hidden_mobile {
+        display: none;
+    }
+    .hidden_desktop {
+        display: block;
+    }
+    .title-area {
+        padding-top: 0;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .bio-card {
+        width: 100%;
+    }
+    .content-area {
+        padding-top: 0;
+        padding-bottom: 0;
+        justify-content: flex-start;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .img-area {
+        margin: 5%;
+    }
+    .action-area {
+        margin-bottom: 5px;
+    }
+    .action-area .btn {
+        margin: 0 auto;
+    }
+    .content-area {
+        padding-right: 5px;
+    }
+}
+
+/******* end bio card *********/
+
+/****** fact card *********/
+
+.fact-card {
+    grid-area: card;
+    display: flex;
+    flex-direction: column;
+    background: rgb(241, 241, 241);
+    width: 60%;
+    margin-left: 10%;
+}
+
+.title-top {
+    font-size: 2.28rem;
+    line-height: 110%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 0;
+}
+
+.content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+    justify-content: space-evenly;
+}
+
+.list-item {
+    display: flex;
+    flex-grow: 1;
+    font-size: 1.54rem;
+    line-height: 110%;
+    margin: 0.82rem 0 0.656rem 0;
+    align-items: center;
+}
+
+#list-p {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    .fact-card {
+        height: 80%;
+    }
+    .content {
+        justify-content: flex-start;
+    }
+    .title-top {
+        font-size: 1.64rem;
+        line-height: 110%;
+    }
+    .list-item {
+        font-size: 1rem;
+        margin: 0 auto;
+    }
+    .middle-grid {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .fact-card {
+        margin-top: 3rem;
+        width: 81%;
+        margin: 3rem auto 0;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .fact-card {
+        width: 100%;
+    }
+}
+
+/*********** end fact card ****************/
+
+/********* middle section end *************/
+
+.testi-area {
+    grid-area: testimonial;
+    display: grid;
+    grid-template-areas: "title pic" "slider pic";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .1fr 1fr;
+    min-width: 100%;
+    background: rgb(247, 247, 247);
+}
+
+.slide-title {
+    grid-area: title;
+}
+
+.slider-wrapper {
+    grid-area: slider;
+    min-width: 80%;
+    max-width: 80%;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+.testimonial-image {
+    grid-area: pic;
+    min-width: 100%;
+}
+
+.testimonial-image img {
+    min-width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .testi-area {
+        grid-template-areas: "title" "slider" "pic";
+        grid-template-rows: .1fr .5fr 1fr;
+        grid-template-columns: 1fr;
+    }
+    .slider-wrapper {
+        width: 100vw;
+    }
+    .testi-image {
+        width: 100vw;
+    }
+}
+
+/**********************************/
+
+.logo-area img {
+    height: 100px;
+    margin-top: 20%;
+}
+
+.info-area {
+    margin-top: 20%;
+    margin-bottom: 11.2%;
+}
+
+.contact-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 5%;
+}
+
+.form-container {
+    width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+    .contact-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+/****** practice area page ************/
+
+#background-pa {
+    margin-top: 5px;
+    background-image: url("../img/books.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top left;
+}
+
+#tab-row {
+    margin-top: 10rem;
+}
+
+.title-container {
+    display: flex;
+    margin-left: 1%;
+}
+
+#tabs-container {
+    background: rgb(248, 248, 248);
+}
+
+/************ practice area page end ********/
+
+/********** contact page **********/
+
+#background-contact {
+    margin-top: 5px;
+    background-image: url("../img/scale.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top left;
+}
+
+.contactus-row {
+    display: flex;
+    width: 60%;
+}
+
+.form-container {
+    padding: 1rem 3rem;
+}
+
+@media only screen and (max-width:660px) {
+    .contactus-row,
+    .form-container {
+        width: 100%;
+    }
+}
+
+/************** forms above footer ***************/
+
+.section-form {
+    grid-area: bottom-cards;
+}
+
+.bottom-cards-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 5%;
+}
+
+.map-card {
+    flex-grow: 1;
+}
+
+@media only screen and (max-width: 800px) {
+    #desktop-card {
+        display: none;
+    }
+    .bottom-cards-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .map-card {
+        width: 100%;
+        height: 25rem;
+    }
+}
+
+/************* footer ***************/
+
+.page-footer {
+    grid-area: footer;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.footer-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "left right";
+}
+
+.left-box {
+    grid-area: left;
+}
+
+.right-box {
+    grid-area: right;
+    display: flex;
+    margin-left: 5%;
+}
+
+#contact-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#footer-logo {
+    height: 5rem;
+}
+
+#footer-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+.silly {
+    align-self: flex-start;
+    display: flex;
+    justify-content: center;
+}
+
+/**** About Page *******/
+
+.about-row {
+    display: flex;
+    min-width: 100%;
+}
+
+.about-title {
+    border-bottom: solid 5px #ffc107;
+    margin-bottom: 1rem;
+}
+
+#background-about {
+    margin-top: 5px;
+    background-image: url("../img/pillars.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top left;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+}
+
+.picture-row {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.picture-row p {
+    margin-left: 5%;
+}
+
+@media only screen and (max-width: 960px) {
+    .picture-row {
+        grid-template-columns: 1fr;
+    }
+    .picture-row p {
+        margin-left: 0;
+        margin-top: 5%;
+    }
+}
+
+/************** attorney profile ******************/
+
+#profile-title {
+    font-size: 1.64rem;
+    line-height: 110%;
+    margin: 0.82rem 0 0.656rem 2rem;
+}
+
+#ap-pic {
+    margin-top: 1rem;
+    width: 10rem;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+    /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+    thead {
+        display: table-header-group;
+    }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

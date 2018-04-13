@@ -4520,32 +4520,32 @@ nav .input-field label.active i {
 }
 
 @font-face {
-    font-family: "Roboto";
-    src: local(Roboto Thin), url("../fonts/roboto/Roboto-Thin.woff2") format("woff2"), url("../fonts/roboto/Roboto-Thin.woff") format("woff");
+    font-family: 'Roboto';
+    src: local(Roboto Thin), url("/fonts/roboto/Roboto-Thin.woff2") format("woff2"), url("../fonts/roboto/Roboto-Thin.woff") format("woff");
     font-weight: 100;
 }
 
 @font-face {
-    font-family: "Roboto";
-    src: local(Roboto Light), url("../fonts/roboto/Roboto-Light.woff2") format("woff2"), url("../fonts/roboto/Roboto-Light.woff") format("woff");
+    font-family: 'Roboto';
+    src: local(Roboto Light), url("/fonts/roboto/Roboto-Light.woff2") format("woff2"), url("../fonts/roboto/Roboto-Light.woff") format("woff");
     font-weight: 300;
 }
 
 @font-face {
-    font-family: "Roboto";
-    src: local(Roboto Regular), url("../fonts/roboto/Roboto-Regular.woff2") format("woff2"), url("../fonts/roboto/Roboto-Regular.woff") format("woff");
+    font-family: 'Roboto';
+    src: local(Roboto Regular), url("/fonts/roboto/Roboto-Regular.woff2") format("woff2"), url("../fonts/roboto/Roboto-Regular.woff") format("woff");
     font-weight: 400;
 }
 
 @font-face {
-    font-family: "Roboto";
-    src: local(Roboto Medium), url("../fonts/roboto/Roboto-Medium.woff2") format("woff2"), url("../fonts/roboto/Roboto-Medium.woff") format("woff");
+    font-family: 'Roboto';
+    src: local(Roboto Medium), url("/fonts/roboto/Roboto-Medium.woff2") format("woff2"), url("../fonts/roboto/Roboto-Medium.woff") format("woff");
     font-weight: 500;
 }
 
 @font-face {
-    font-family: "Roboto";
-    src: local(Roboto Bold), url("../fonts/roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/roboto/Roboto-Bold.woff") format("woff");
+    font-family: 'Roboto';
+    src: local(Roboto Bold), url("/fonts/roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/roboto/Roboto-Bold.woff") format("woff");
     font-weight: 700;
 }
 
@@ -4553,63 +4553,69 @@ a {
     text-decoration: none;
 }
 
+/* 
 @font-face {
     font-family: "Montserrat";
-    src: local(Montserrat Regular), url("../fonts/MC/montserrat/Montserrat-Regular.ttf") format("ttf");
+    src: local(Montserrat Regular), url("/fonts/MC/montserrat/Montserrat-Regular.ttf") format("ttf");
     font-style: normal;
+    font-weight: 400;
 }
 
 @font-face {
     font-family: "Montserrat";
-    src: local(Montserrat Black), url("../fonts/MC/montserrat/Montserrat-Black.ttf") format("ttf");
+    src: local(Montserrat Black), url("/fonts/MC/montserrat/Montserrat-Black.ttf") format("ttf");
     font-weight: 500;
 }
 
 @font-face {
     font-family: "Montserrat";
-    src: local(Montserrat Bold), url("../fonts/MC/montserrat/Montserrat-Bold.ttf") format("ttf");
+    src: local(Montserrat Bold), url("/fonts/MC/montserrat/Montserrat-Bold.ttf") format("ttf");
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Montserrat";
-    src: local(Montserrat Light), url("../fonts/MC/montserrat/Montserrat-Light.ttf") format("ttf");
+    src: local(Montserrat Light), url("/fonts/MC/montserrat/Montserrat-Light.ttf") format("ttf");
     font-weight: 200;
     font-style: light;
 }
 
 @font-face {
     font-family: "Montserrat";
-    src: local(Montserrat Thin), url("../fonts/MC/montserrat/Montserrat-Thin.ttf") format("ttf");
+    src: local(Montserrat Thin), url("/fonts/MC/montserrat/Montserrat-Thin.ttf") format("ttf");
     font-weight: 100;
 }
 
 @font-face {
     font-family: "Cardo";
-    src: local(Cardo Bold), url("../fonts/MC/cardo/Cardo-Bold.ttf") format("ttf");
+    src: local(Cardo Bold), url("/fonts/MC/cardo/Cardo-Bold.ttf") format("ttf");
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Cardo";
-    src: local(Cardo Italic), url("../fonts/MC/cardo/Cardo-Italic.ttf") format("ttf");
+    src: local(Cardo Italic), url("/fonts/MC/cardo/Cardo-Italic.ttf") format("ttf");
     font-style: italic;
 }
 
 @font-face {
     font-family: "Cardo";
-    src: local(Cardo Regular), url("../fonts/MC/cardo/Cardo-Regular.ttf") format("ttf");
+    src: local(Cardo Regular), url("/fonts/MC/cardo/Cardo-Regular.ttf") format("ttf");
     font-style: normal;
-}
+} */
 
 html {
     line-height: 1.5;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: normal;
     color: rgba(0, 0, 0, 0.87);
 }
+
+/* p {
+    font-family: 'Cardo', serif;
+} */
 
 @media only screen and (min-width: 0) {
     html {
