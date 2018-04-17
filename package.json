@@ -1,0 +1,25 @@
+{
+  "name": "law",
+  "version": "1.0.0",
+  "description": "Law Firm Site",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mreinecker/mcss_law_firm.git"
+  },
+  "author": "Marc Reinecker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mreinecker/mcss_law_firm/issues"
+  },
+  "homepage": "https://github.com/mreinecker/mcss_law_firm#readme",
+  "devDependencies": {
+    "gulp-check-unused-css": "^2.1.4"
+  }
+}
