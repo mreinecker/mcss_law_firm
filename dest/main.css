@@ -495,6 +495,10 @@ body {
     margin-bottom: 0;
 }
 
+.iconsize {
+    font-size: 4rem;
+}
+
 @media screen and (max-width: 1000px) {
     .fact-card {
         height: 80%;
@@ -520,6 +524,9 @@ body {
         margin-top: 3rem;
         width: 81%;
         margin: 3rem auto 0;
+    }
+    .iconsize {
+        font-size: 2rem;
     }
 }
 
