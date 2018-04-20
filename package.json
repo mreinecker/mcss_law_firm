@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/mreinecker/mcss_law_firm#readme",
   "devDependencies": {
-    "gulp-check-unused-css": "^2.1.4"
+    "gulp-check-unused-css": "^2.1.4",
+    "gulp-postcss": "^7.0.1",
+    "postcss-load-config": "^1.2.0"
   }
 }

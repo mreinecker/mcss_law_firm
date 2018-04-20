@@ -111,6 +111,15 @@ textarea {
     padding: 10px;
 }
 
+#phone1{
+    fill: #ffffff;
+}
+#phone2{
+    fill: #ffc107;
+}
+#hamburger{
+    fill: #ffc107;
+}
 @media only screen and (max-width: 690px) {
     .hide-small-top {
         display: none !important;
@@ -142,9 +151,7 @@ textarea {
 }
 
 #hero-image {
-    background: url("../img/hero.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
+    background: #b3d4fc url("../img/hero.jpg") no-repeat center;
     background-size: cover;
     padding: 10px;
     height: 40vh;
@@ -292,15 +299,14 @@ body {
 
 .image-area {
     background-image: url("../img/scalehammer.jpg");
-    background-position: center;
+    background-position: top center;
     background-repeat: no-repeat;
     background-size: 100vw;
-    background-position: top;
 }
 
 @media screen and (max-width: 660px) {
     .image-area {
-        background-size: contian;
+        background-size: contain;
     }
 }
 
@@ -404,10 +410,7 @@ body {
         margin: 0;
     }
     .content-area {
-        padding-top: 30px;
-        padding-bottom: 30px;
-        padding-right: 30px;
-        padding-left: 0;
+        padding: 30px 30px 30px 0;
     }
     .img-area {
         margin: 5%;
@@ -475,7 +478,7 @@ body {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    margin: 1.5rem;
+    margin: 2rem;
     justify-content: space-evenly;
 }
 
@@ -488,15 +491,13 @@ body {
     align-items: center;
 }
 
-#list-p {
-    margin-left: 1em;
-    margin-right: 1em;
-    margin-top: 0;
-    margin-bottom: 0;
+.list-p {
+    margin: 0 1em;
 }
 
-.iconsize {
-    font-size: 4rem;
+.check svg {
+    height: 4rem;
+    width: 4rem;
 }
 
 @media screen and (max-width: 1000px) {
@@ -517,6 +518,10 @@ body {
     .middle-grid {
         margin-bottom: 0;
     }
+    .check svg {
+        height: 3rem;
+        width: 3rem;
+    }
 }
 
 @media screen and (max-width: 660px) {
@@ -525,8 +530,9 @@ body {
         width: 81%;
         margin: 3rem auto 0;
     }
-    .iconsize {
-        font-size: 2rem;
+    .check img {
+        height: 2rem;
+        width: 2rem;
     }
 }
 
@@ -776,23 +782,58 @@ body {
     flex-direction: column;
     min-width: 100%;
 }
-
-.picture-row {
+.picture-row{
     display: grid;
+    grid-template-areas: "pics" "pb";
+}
+.pictures {
+    grid-area: pics;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#pb{
+    grid-area: pb;
+}
+#pb p{
+    margin-left: 0;
+}
+#pic-row-ap {
+    display: grid;
+    grid-template-areas: "pic right-area" "pic para";
     grid-template-columns: auto auto;
 }
-
-.picture-row p {
+#left-pic{
+    grid-area: pic;
+}
+#right-title{
+    grid-area: right-area;
+}
+#lower-para{
+    grid-area: para;
+}
+.picture-row p{
     margin-left: 5%;
 }
 
-@media only screen and (max-width: 960px) {
-    .picture-row {
-        grid-template-columns: 1fr;
+@media only screen and (max-width: 1050px) {
+    #pic-row-ap{
+        grid-template-areas: "pic right-area" "para para";
     }
-    .picture-row p {
+    #lower-para p{
         margin-left: 0;
-        margin-top: 5%;
+    }
+}
+@media only screen and (max-width: 660px) {
+    #pic-row-ap{
+        grid-template-areas: "pic" "right-area" "para";
+    }
+
+    #right-title p, #profile-title{
+        margin-left: 0;
+    }
+    #left-pic{
+        margin: 0 auto;
     }
 }
 
@@ -930,16 +971,20 @@ body {
         box-shadow: none !important;
         text-shadow: none !important;
     }
+
     a,
     a:visited {
         text-decoration: underline;
     }
+
     a[href]:after {
         content: " (" attr(href) ")";
     }
+
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
+
     /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
@@ -948,14 +993,17 @@ body {
     a[href^="javascript:"]:after {
         content: "";
     }
+
     pre {
         white-space: pre-wrap !important;
     }
+
     pre,
     blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
+
     /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
@@ -963,16 +1011,19 @@ body {
     thead {
         display: table-header-group;
     }
+
     tr,
     img {
         page-break-inside: avoid;
     }
+
     p,
     h2,
     h3 {
         orphans: 3;
         widows: 3;
     }
+
     h2,
     h3 {
         page-break-after: avoid;
